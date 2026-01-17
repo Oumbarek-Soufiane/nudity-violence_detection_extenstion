@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Real Time Nudity && Violence Detection",
+  "version": "1.0",
+  "description": "Real-time child safety filter using Gemini 2.0 Flash.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["<all_urls>", "http://localhost:3002/*"],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png"
+    },
+    "default_popup": "index.html",
+    "default_title": "SafeSurf Dashboard"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
