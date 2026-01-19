@@ -96,3 +96,6 @@ Add your API Key:
 Extrait de code
 GEMINI_API_KEY=your_actual_api_key_here
 PORT=3001
+
+### 3. Test the extension
+**Open the index.html in order to  test the extension**
